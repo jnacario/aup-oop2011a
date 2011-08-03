@@ -3,10 +3,10 @@
 	require_once "classes/Person.php";
 	require_once "classes/Warrior.php";
 	require_once "classes/Ninja.php";
-	
+
 	$naruto = new Warrior("Naruro");
 	$sasuke = new Ninja("Sasuke");
-	
+
 	while($naruto->is_alive() and $sasuke->is_alive())
 	{
 		$sasuke->attack($naruto);

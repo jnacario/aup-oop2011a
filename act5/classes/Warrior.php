@@ -1,12 +1,17 @@
 <?php
 
+	require_once "interfaces/Human.php";
+	require_once "interfaces/Fighter.php";
 	require_once "classes/Person.php";
-	
-	class Warrior extends Person{
-		public $max_health = 200;
+
+	class Warrior extends Person implements Fighter{
 		public $damage = 10;
 		public $range;
 		public $attack_bonus;
+		
+		public function __construct($name){
+			$this->name=$name;
+		}
 		
 		public function attack($enemy){
 			$range = rand(1,3);

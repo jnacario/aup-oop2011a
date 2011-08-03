@@ -1,0 +1,7 @@
+1.create interfaces for Human(eat,move,) and Fighter(attack,defend)
+2.abstract Person class should implement Human
+3.Ninja and Warrior extends Person implement Fighter
+4.make Ninja and Warrior fight as in act4
+5.always commit for any significant change you did
+6.when finished, tag it on as "Activity-5"
+7.push
